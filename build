@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 . build/envsetup.sh
-lunch bliss_lavender-user
+lunch blaze_alioth-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -44,8 +44,7 @@ tg(){
 id=-1001659048493
 
 # compile plox
-make sepolicy -j8
-blissify -v lavender &
+brunch alioth &
 sleep 85m
 kill %1
 
