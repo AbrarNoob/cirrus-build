@@ -1,6 +1,7 @@
 #!/bin/bash
 cd /tmp/rom
 
+
 # Normal build steps
 . build/envsetup.sh
 lunch bliss_lavender-user
